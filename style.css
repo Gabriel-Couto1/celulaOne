@@ -1,0 +1,162 @@
+:root {
+    --cor-primaria: #470845; /* Roxo primário */
+    --cor-secundaria: #f6f6f6; /* Cinza escuro */
+    --cor-terciaria: #000000; /* Preto */
+    --cor-chama: #EC2F46;
+
+    --font-primaria: "inter", sans-serif;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo de largura e altura */
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: var(--font-primaria); /* Define a fonte padrão */
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28;
+    background-color: var(--cor-secundaria); /* Cor de fundo da página */
+    color: var(--cor-secundaria); /* Cor do texto padrão */
+    line-height: 1.6; /* Altura das linhas para facilitar leitura */
+    
+}
+
+
+/*-------------------------CONTEUDO GERAL------------------------------------------------*/
+
+/*----------INICIO------------*/
+
+main {
+    padding: 30px; /* Espaçamento interno para o conteúdo principal */
+    background: var(--cor-primaria); /* Fundo semitransparente */
+    display: flex; /* Ativando Flexbox para alinhamento */
+    flex-direction: column; /* Colocar itens em coluna */
+    align-items: center; /* Centralizar horizontalmente */
+    justify-content: center; /* Centralizar verticalmente */
+    min-height: 100vh; /* Garantir que preencha a altura da tela */
+}
+
+.principal {
+    background-image: url("./Assest/2.jpeg");
+    background-size: 50% 80%; 
+    background-position: right center; /* A imagem ficará alinhada à direita, centralizada verticalmente */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-attachment: fixed; /* A imagem permanece fixa ao rolar a página */
+    background-color: var(--cor-primaria); /* Adiciona uma cor de fundo para a parte direita da página */
+    align-items: center;
+    text-align: center;
+}
+
+.conteudo {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+       
+}
+
+.conteudo__text__botao {
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block; /*Alterado para inline-block para permitir que o tamanho do botão se ajuste ao conteúdo */
+    line-height: 1.5; /* Ajusta a altura da linha para centralizar o texto verticalmente */
+    padding: 1em 2em; /* Ajusta o padding para que o botão tenha um espaçamento adequad*/
+    text-align: center; /* Centraliza o texto horizontalmente dentro do botão*/
+}
+ 
+
+.botao_secundario {
+
+    color: var(--cor-secundaria);
+    border: var(--cor-secundaria) dotted;
+    text-align: center;
+    width: 500px; /* Permite que o botão se ajuste ao tamanho do texto */
+    height: 56px; /* Deixa a altura do botão dinâmica conforme o conteúdo */ 
+    align-items: center;
+  
+ }
+
+ .conteudo__principal__grid {
+    margin-left: 120px;
+ }
+
+.conteudo__text {
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16;
+   
+}
+
+.conteudo-imagem {
+    margin: 1em 0 2em 0;
+}
+
+.conteudo__secundario {
+    background-color: var(--cor-primaria);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
+
+}
+
+.cont-secundario {
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16;
+}
+
+.cont-sec {
+    font-size: 32px;
+}
+
+.cont-sec-paragrafo {
+    font-size: 16px;
+}
+
+.direita {
+    position: absolute; /* Posicionamento absoluto no cabeçalho */
+    right: 32px; /* Define a posição à direita */
+    color: var(--cor-terciaria); /* Cor do texto para destacar */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s, background-color 0.3s; /* Transição suave ao passar o mouse */
+    padding: 8px 12px; /* Padding para dar espaço interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    
+}
+
+.cont-sec-direita {
+    right: 32px; /* Define a posição à direita */
+    color: var(--cor-terciaria); /* Cor do texto para destacar */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s, background-color 0.3s; /* Transição suave ao passar o mouse */
+    padding: 8px 12px; /* Padding para dar espaço interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex; /* Uso de Flexbox para alinhar os itens */
+    justify-content: space-between; /* Espaço entre os itens no cabeçalho */
+    align-items: center; /* Alinhamento vertical centralizado */
+    position: relative; /* Para posicionar o link de "Agendar Horário" */
+    text-align: center;
+}
+
+
+/*-------------------------RODAPE GERAL------------------------------------------------*/
+

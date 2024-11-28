@@ -1,0 +1,321 @@
+:root {
+    --cor-primaria: #470845;
+    --cor-secundaria: #f6f6f6; 
+    --cor-terciaria: #000000; 
+    --cor-nucleo: #973894;
+    --cor-funcao: #cfc7c7;
+    --cor-hover: #973894;
+    --cor-chama: #EC2F46;
+
+    --font-primaria: "inter", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 15px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 1000; 
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* Estilo para o menu de navegação */
+.cabecalho__text {
+    display: flex; 
+    gap: 20px; 
+}
+
+.cabecalho__text__historia {
+    color: var(--cor-primaria);
+}
+
+/* Estilo para os links do menu */
+.cabecalho__text__link {
+    color: var(--cor-secundaria); 
+    text-decoration: none; 
+    font-size: 18px; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+}
+
+.cabecalho__text__link__historia {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+/* Efeito hover para os links do menu */
+.cabecalho__text__link:hover {
+    color: var(--cor-hover); 
+}
+
+.cabecalho__text__link:active {
+    color: var(--cor-nucleo); 
+}
+
+body {
+    font-family: var(--font-primaria); /* Define a fonte padrão */
+    background-color: var(--cor-nucleo);
+}
+
+
+
+main {
+    font-family: var(--font-primaria); /* Define a fonte padrão */
+    background-color: var(--cor-nucleo);
+}
+
+
+.principal {
+    background-image: url("./Assest/2.jpeg");
+    background-size: 50% 80%; 
+    background-position: right center; /* A imagem ficará alinhada à direita, centralizada verticalmente */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-attachment: fixed; /* A imagem permanece fixa ao rolar a página */
+    background-color: var(--cor-primaria); /* Adiciona uma cor de fundo para a parte direita da página */
+    align-items: center;
+    text-align: center;
+}
+
+.conteudo {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+       
+}
+
+.conteudo__text__botao {
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block; /*Alterado para inline-block para permitir que o tamanho do botão se ajuste ao conteúdo */
+    line-height: 1.5; /* Ajusta a altura da linha para centralizar o texto verticalmente */
+    padding: 1em 2em; /* Ajusta o padding para que o botão tenha um espaçamento adequad*/
+    text-align: center; /* Centraliza o texto horizontalmente dentro do botão*/
+}
+ 
+
+.botao_secundario {
+
+    color: var(--cor-secundaria);
+    border: var(--cor-secundaria) dotted;
+    text-align: center;
+    width: 500px; /* Permite que o botão se ajuste ao tamanho do texto */
+    height: 56px; /* Deixa a altura do botão dinâmica conforme o conteúdo */ 
+    align-items: center;
+  
+ }
+
+ .conteudo__principal__grid {
+    margin-left: 120px;
+ }
+
+.conteudo__text {
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16;
+   
+}
+
+.conteudo-imagem {
+    margin: 1em 0 2em 0;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+}
+
+.conteudo__secundario {
+    background-color: var(--cor-primaria);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
+
+}
+
+.cont-secundario {
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16;
+}
+
+
+/* Para organizar as seções lado a lado */
+.nucleo {
+    display: flex; /* Flexbox para organizar lado a lado */
+    justify-content: space-between; /* Espaço entre as seções */
+    text-align: center;
+    align-items: center;
+    gap: 30px; /* Espaço entre as seções */
+    padding: 20px;
+}
+
+.nucleo__equipe {
+    justify-content: space-between; /* Espaço entre as seções */
+    text-align: center;
+    align-items: center;
+    gap: 30px; /* Espaço entre as seções */
+    padding: 20px;
+}
+
+.lideres, .lideres__descricao, .secretaria {
+    flex: 1; /* Cada seção ocupa 50% do espaço */
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilização das imagens dos líderes */
+.lider__desc {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    display: flex;
+}
+
+.lider__gabriel, .lider__dani {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lider__gabriel img, .lider__dani img, .lider__treinamento img .conteudo-imagem {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.lider__treinamento {
+    text-align: center;
+    display: inline;
+}
+
+/* Estilo para o título e descrição */
+.titulo__funcao {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--cor-secundaria);
+}
+
+.texto__funcao {
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+}
+
+/* Estilos adicionais para os líderes */
+.nome__lider {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+}
+
+.text__lider {
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+}
+
+.lider__desc__treinamento {
+    display: flex;
+    flex-wrap: wrap;  /* Permite quebrar em várias linhas */
+    justify-content: space-around; /* Espaçamento entre os itens */
+    list-style: none;  /* Remove os marcadores da lista */
+    padding: 0;
+}
+
+.lider__treinamento {
+    text-align: center;
+    max-width: 250px;  /* Define a largura máxima para cada item */
+    margin: 20px;
+}
+
+.lider__treinamento img {
+    border-radius: 50%;  /* Torna a imagem circular */
+    object-fit: cover;   /* Garante que a imagem cubra o espaço */
+
+}
+
+/*-----------------------------------EVENTOS------------------------------------------------*/
+.momentos__imagens {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden; 
+}
+
+.momentos__imagens img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: destaque 18s infinite; 
+}
+
+.momentos__imagens img:nth-child(1) { animation-delay: 0s; }
+.momentos__imagens img:nth-child(2) { animation-delay: 3s; }
+.momentos__imagens img:nth-child(3) { animation-delay: 6s; }
+.momentos__imagens img:nth-child(4) { animation-delay: 9s; }
+.momentos__imagens img:nth-child(5) { animation-delay: 12s; }
+.momentos__imagens img:nth-child(6) { animation-delay: 15s; }
+.momentos__imagens img:nth-child(7) { animation-delay: 18s; }
+.momentos__imagens img:nth-child(8) { animation-delay: 21s; }
+
+@keyframes destaque {
+    0% { opacity: 0; }
+    10% { opacity: 1; } 
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.momentos__imagens img.ativa {
+    opacity: 1; 
+}
+
+.imagem__fixa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagens__fixadas img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer; /* Indica que a imagem é clicável */
+    object-fit: cover;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+
+/*-------------------------RODAPE GERAL------------------------------------------------*/
+.rodape {
+    text-align: center; 
+    color: var(--cor-secundaria); 
+    padding: 15px 0; 
+    font-size: 14px; 
+    font-weight: bolder;
+}
